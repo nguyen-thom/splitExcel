@@ -24,4 +24,6 @@ public class CompanyTarget {
     
     private Long totalValue;
     
+    private String managerDepartment;
+    
 }

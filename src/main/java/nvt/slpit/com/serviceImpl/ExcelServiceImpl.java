@@ -34,27 +34,28 @@ public class ExcelServiceImpl implements ExcelService {
     }
     
     @Override
-    public Map<String, List<InvoiceInputEntity>> readExcelFile(File fullPath) throws Exception {
+    public Map<String, List<InvoiceInputEntity>> readExcelFile(File fullPath,int startRow) throws Exception {
         Workbook workbook = WorkbookFactory.create(fullPath);
-    
-        Iterator<Sheet> sheetIterator = workbook.sheetIterator();
-        System.out.println("Retrieving Sheets using Iterator");
-        while (sheetIterator.hasNext()) {
-            Sheet sheet = sheetIterator.next();
-            System.out.println("=> " + sheet.getSheetName());
-        }
         Sheet sheet = workbook.getSheetAt(0);
-        int starRow = 13;
-        int endRow = 587;
-        InvoiceInputEntity invoiceInputEntity = new InvoiceInputEntity();
+        
+        InvoiceInputEntity invoiceInputEntity;
         Map<String,List<InvoiceInputEntity>> listMap = new HashMap<>();
         List<InvoiceInputEntity> listInvoices ;
+        String nguoiNopThue = sheet.getRow(4).getCell(5).getStringCellValue();
+        String masothue = sheet.getRow(5).getCell(5).getStringCellValue();
+        
         int index = 0;
-    
-        for (int i = starRow ; i < endRow; i++) {
+        boolean isLastRow = false;
+        while(!isLastRow){
             //ma so cong ty
-            Cell c6 = sheet.getRow(i).getCell(6);
+            Row row = sheet.getRow(startRow++);
+            Cell c6 = row.getCell(6);
             String mstCty = getCellValueAsString(c6);
+            if(StringUtils.isEmpty(mstCty)){
+                isLastRow = true;
+                continue;
+                
+            }
             if (listMap.containsKey(mstCty)) {
                 listInvoices = listMap.get(mstCty);
             }else{
@@ -65,31 +66,38 @@ public class ExcelServiceImpl implements ExcelService {
             invoiceInputEntity = new InvoiceInputEntity();
             invoiceInputEntity.setIndex(++index);
             invoiceInputEntity.setTaxCode(mstCty);
+            invoiceInputEntity.setSaleCompanyName(nguoiNopThue);
+            invoiceInputEntity.setSaleCompanyCode(masothue);
             //column ky hieu
-            Cell c2 = sheet.getRow(i).getCell(2);
+            Cell c2 = row.getCell(2);
             String sign = getCellValueAsString(c2);
             invoiceInputEntity.setSign(sign);
             
             //column so phat hanh
-            Cell c3 =sheet.getRow(i).getCell(3);
+            Cell c3 =row.getCell(3);
             String number = getCellValueAsString(c3);
             invoiceInputEntity.setInvoiceNumber(number);
             
             //column num phat hanh
-            Cell c4 =sheet.getRow(i).getCell(4);
+            Cell c4 =row.getCell(4);
             String date = getCellValueAsString(c4);
             invoiceInputEntity.setInvoiceDate(date);
             
             //column ten cong ty target
-            Cell c5 = sheet.getRow(i).getCell(5);
+            Cell c5 = row.getCell(5);
             String companyName = getCellValueAsString(c5);
             invoiceInputEntity.setCompanyName(companyName);
     
             //gia tri chua dua vao thue
-            Cell c10 = sheet.getRow(i).getCell(10);
+            Cell c10 = row.getCell(10);
             String taxValue = getCellValueAsString(c10);
             invoiceInputEntity.setTaxValue(taxValue);
+            
+            Cell c16 = row.getCell(16);
+            String cqQuanLy = getCellValueAsString(c16);
+            invoiceInputEntity.setCoQuanQuanLy(cqQuanLy);
             listInvoices.add(invoiceInputEntity);
+            
         }
         return listMap;
     }
@@ -118,7 +126,9 @@ public class ExcelServiceImpl implements ExcelService {
         XSSFFont font = wb.createFont();
         font.setFontName("Times New Roman");
         style.setFont(font);
-
+    
+        cell = worksheet.getRow(5).getCell(4);
+        cell.setCellValue(data.getManagerDepartment());
         
         //set name for company
         cell = worksheet.getRow(7).getCell(3);
@@ -126,6 +136,8 @@ public class ExcelServiceImpl implements ExcelService {
         
         cell = worksheet.getRow(7).getCell(9);
         cell.setCellValue(data.getTaxCode());
+        
+        
         List<Invoice> invoices = data.getInvoiceList();
        
         int startRow = 13;
@@ -140,7 +152,7 @@ public class ExcelServiceImpl implements ExcelService {
         rowNumber = startRow;
        for(Invoice invoice : invoices){
             XSSFRow row = worksheet.getRow(rowNumber++);
-            row.setHeightInPoints((short)26);
+            row.setHeightInPoints((short)23);
             insertData(index++, invoice,company,row);
         }
        //write total

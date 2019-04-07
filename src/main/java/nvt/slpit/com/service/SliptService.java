@@ -10,23 +10,36 @@ import nvt.slpit.com.serviceImpl.FileServiceImpl;
 import org.apache.commons.io.FileUtils;
 
 import java.io.File;
+import java.text.Normalizer;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Pattern;
 
 @Slf4j
 public class SliptService {
     
-   public void sliptExcelFile(String input, String folderOutput){
-        ClassLoader classLoader = getClass().getClassLoader();
-        File file = new File(classLoader.getResource("input_data/XMHD.xlsx").getFile());
+   public void sliptExcelFile(String input, String folderOutput, String templateFile, int startRow){
+        File file = new File(input);
+        if(!file.exists()){
+            log.info("input not exist: " + input);
+            return;
+        }
+       File fileTemplateOutput = new File(templateFile);
+       if(!fileTemplateOutput.exists()){
+           log.info("input template not exist: " + templateFile);
+           return;
+       }
         ExcelService excelService = new ExcelServiceImpl();
         FileService fileService = new FileServiceImpl();
        try{
-            File fileTemplateOutput = new File(classLoader.getResource("template_output/template_gia_nguyen.xlsx").getFile());
+           
             File outputDir =  new File(folderOutput);
-            FileUtils.cleanDirectory(outputDir);
-            Map<String, List<InvoiceInputEntity>> dataInput = excelService.readExcelFile(file);
+            if(!outputDir.exists()){
+                outputDir.mkdirs();
+            }
+            //FileUtils.cleanDirectory(outputDir);
+            Map<String, List<InvoiceInputEntity>> dataInput = excelService.readExcelFile(file, startRow);
            
             Map<String, CompanyTarget> companyTargetMap = new HashMap<>();
             convertCompany(dataInput, companyTargetMap);
@@ -37,11 +50,11 @@ public class SliptService {
                 
                 //create file name
                 String name = companyTargetInput.getName();
-                String fileName = ctyCode;
+                String fileName = ctyCode.concat("_").concat(name);
+                fileName = covertStringToURL(fileName);
                 
                 //create file from template
                 String fullPath = folderOutput + fileName +  ".xlsx";
-                log.info("fullPath output:"+ fullPath);
                 File fileOutput = new File(fullPath);
                 fileService.copy(fileTemplateOutput,fileOutput);
                 
@@ -59,11 +72,10 @@ public class SliptService {
         for(Map.Entry<String,List<InvoiceInputEntity>> listEntry : dataInput.entrySet()){
             String mst = listEntry.getKey();
             List<InvoiceInputEntity> listData = listEntry.getValue();
-            System.out.println("List Data: " + listData);
             if(listData.isEmpty()){
                 continue;
             }
-            long totalValue = 0L;
+            long totalValue;
             if(companyTargetMap.containsKey(listEntry.getKey())){
                 companyTarget = companyTargetMap.get(mst);
                 totalValue = companyTarget.getTotalValue();
@@ -72,11 +84,13 @@ public class SliptService {
                 companyTarget = new CompanyTarget();
                 Company company = new Company();
                 //TODO refactor code
-                company.setName("Công ty TNHH Đồi Thông Xanh");
-                company.setTaxCode("303137349");
+                company.setName(firstItem.getSaleCompanyName());
+                company.setTaxCode(firstItem.getSaleCompanyCode());
                 companyTarget.setName(firstItem.getCompanyName());
                 companyTarget.setTaxCode(firstItem.getTaxCode());
+                companyTarget.setManagerDepartment(firstItem.getCoQuanQuanLy());
                 companyTarget.setCompany(company);
+                
                 companyTargetMap.put(mst,companyTarget);
                 totalValue = 0L;
             }
@@ -93,5 +107,15 @@ public class SliptService {
             }
             companyTarget.setTotalValue(totalValue);
         }
+    }
+    public String covertStringToURL(String str) {
+        try {
+            String temp = Normalizer.normalize(str, Normalizer.Form.NFD);
+            Pattern pattern = Pattern.compile("\\p{InCombiningDiacriticalMarks}+");
+            return pattern.matcher(temp).replaceAll("").toLowerCase().replaceAll(" ", "-").replaceAll("đ", "d");
+        } catch (Exception e) {
+           e.printStackTrace();
+        }
+        return "";
     }
 }

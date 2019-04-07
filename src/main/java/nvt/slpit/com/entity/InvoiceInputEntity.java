@@ -11,6 +11,10 @@ public class InvoiceInputEntity {
     
     private int  index = 1;
     
+    private String saleCompanyCode;
+    
+    private String saleCompanyName;
+    
     private String sign;
     
     private String invoiceNumber;
@@ -22,5 +26,7 @@ public class InvoiceInputEntity {
     private String companyName;
     
     private String taxCode;
+    
+    private String coQuanQuanLy;
     
 }

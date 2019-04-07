@@ -13,7 +13,7 @@ public interface ExcelService {
     
     void createFileFromTemplate(String path, String target) throws Exception;
     
-    Map<String, List<InvoiceInputEntity>> readExcelFile(File fullPath) throws Exception;
+    Map<String, List<InvoiceInputEntity>> readExcelFile(File fullPath,int startRow) throws Exception;
     
     void insertDataToTemplate(CompanyTarget data, File file) throws Exception;
     
