@@ -1,4 +1,6 @@
+target/*
 **/target/**
+**/test/**
 logback/**
 !.mvn/wrapper/maven-wrapper.jar
 

@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1746b4d-ea8b-422e-8a20-0f000f65ee83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/SplitExcelService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/entity/CompanyTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/entity/CompanyTarget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/entity/InvoiceInputEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/entity/InvoiceInputEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/ExcelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/ExcelService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/SliptExcelService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/impl/ExcelServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/impl/ExcelServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/impl/SliptServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/impl/SplitServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/view/SupportSplitPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/view/SupportSplitPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/nvt/slpit/com/entity/CompanyTarget.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nvt/slpit/com/entity/CompanyTarget.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/nvt/slpit/com/entity/InvoiceInputEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nvt/slpit/com/entity/InvoiceInputEntity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/nvt/slpit/com/service/ExcelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nvt/slpit/com/service/ExcelService.class" afterDir="false" />
