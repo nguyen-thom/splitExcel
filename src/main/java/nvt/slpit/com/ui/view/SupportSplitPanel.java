@@ -1,7 +1,7 @@
 package nvt.slpit.com.ui.view;
 
 import lombok.extern.slf4j.Slf4j;
-import nvt.slpit.com.service.impl.SliptServiceImpl;
+import nvt.slpit.com.service.impl.SplitServiceImpl;
 import nvt.slpit.com.ui.components.MessageBox;
 
 import javax.swing.*;
@@ -19,12 +19,13 @@ import java.util.concurrent.CancellationException;
 @Slf4j
 public class SupportSplitPanel extends JPanel implements ActionListener {
 
-    private SliptServiceImpl excelService;
+    private SplitServiceImpl excelService;
 
     JLabel inputFileLabel = new JLabel("File excel xác minh:");
     JLabel outputFolderLabel = new JLabel("Thư mục chứa kết quả:");
     JLabel templateFileLabel = new JLabel("File Excel mẫu:");
     JLabel startRowLabel = new JLabel("Dòng bắt đầu đọc:");
+    JLabel startIndex = new JLabel("Số index bắt đầu:");
     JLabel resultLabel = new JLabel("Kết quả: ");
     JLabel resultSummaryLabel = new JLabel("");
 
@@ -38,6 +39,7 @@ public class SupportSplitPanel extends JPanel implements ActionListener {
     JTextField outputFolderField = new JTextField("");
     JTextField templateFileField = new JTextField("");
     JTextField startRowField = new JTextField("13");
+    JTextField startIndexField = new JTextField("0");
     JTextArea resultTextArea = new JTextArea("", 10, 20);
     JScrollPane jp = new JScrollPane(resultTextArea);
 
@@ -150,7 +152,21 @@ public class SupportSplitPanel extends JPanel implements ActionListener {
         gbc.fill = GridBagConstraints.HORIZONTAL;
         details.add(startRowField, gbc);
 
-        //line 5  - button start processing
+        //line 5 - start index
+        gbc.gridx = 0;
+        gbc.gridy = i;
+        gbc.gridwidth = 1;
+        gbc.fill = GridBagConstraints.NONE;
+        details.add(startIndex, gbc);
+
+        gbc.gridx = 1;
+        gbc.gridy = i++;
+        gbc.gridwidth = 2;
+        gbc.weightx = 1.0;
+        gbc.fill = GridBagConstraints.HORIZONTAL;
+        details.add(startIndexField, gbc);
+
+        //line 6  - button start processing
 
         gbc.gridx = 1;
         gbc.gridy = i++;
@@ -160,8 +176,7 @@ public class SupportSplitPanel extends JPanel implements ActionListener {
         startButton.addActionListener(this);
         details.add(startButton, gbc);
 
-        //line 6 - result
-
+        //line 7 - result
         gbc.gridx = 0;
         gbc.gridy = i;
         gbc.gridwidth = 1;
@@ -176,7 +191,7 @@ public class SupportSplitPanel extends JPanel implements ActionListener {
         gbc.fill = GridBagConstraints.HORIZONTAL;
         details.add(resultSummaryLabel, gbc);
 
-        //line 7 - detail result
+        //line 8 - detail result
         gbc.gridx = 0;
         gbc.gridy = i;
         gbc.gridwidth = 3;
@@ -242,15 +257,17 @@ public class SupportSplitPanel extends JPanel implements ActionListener {
             String inputFilePath = inputFileField.getText();
             String outputFolder = outputFolderField.getText();
             String templateFile = templateFileField.getText();
+
             int startRow = Integer.parseInt(startRowField.getText());
+            int startIndex = Integer.parseInt(startIndexField.getText());
             resultSummaryLabel.setText("Đang xử lý ....");
-            excelService = new SliptServiceImpl(inputFilePath, outputFolder, templateFile, startRow, resultTextArea);
+            excelService = new SplitServiceImpl(inputFilePath, outputFolder, templateFile, startRow, startIndex, resultTextArea);
             this.listerFromSplitService(excelService);
             excelService.execute();
         }
     }
 
-    private void listerFromSplitService(SliptServiceImpl sliptService) {
+    private void listerFromSplitService(SplitServiceImpl sliptService) {
         sliptService.addPropertyChangeListener(new PropertyChangeListener() {
             @Override
             public void propertyChange(PropertyChangeEvent event) {

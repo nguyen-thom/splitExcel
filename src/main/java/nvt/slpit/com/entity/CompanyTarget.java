@@ -10,20 +10,26 @@ import java.util.List;
 @Setter
 @Getter
 @ToString
-public class CompanyTarget {
-    
+public class CompanyTarget implements Comparable<CompanyTarget> {
+
     private String sendTarget;
-    
+
     private String name;
-    
+
+    private int code;
+
     private String taxCode;
-    
+
     private Company company;
-    
+
     private List<Invoice> invoiceList = new ArrayList<>();
-    
+
     private Long totalValue;
-    
+
     private String managerDepartment;
-    
+
+    @Override
+    public int compareTo(CompanyTarget o) {
+        return (int) (this.code - o.getCode());
+    }
 }

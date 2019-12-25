@@ -2,101 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1746b4d-ea8b-422e-8a20-0f000f65ee83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/saveactions_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/entity/TemplateEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/SliptExcelService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/components/MessageBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/domain/MenuDomain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/listerner/ChangeContentPanelListerner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/view/AboutPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/view/BottomPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/view/LeftPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/view/MainPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/view/MenuApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/view/SupportSplitPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/view/TopPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/utils/I18n.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/utils/ResourceBundleControl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/utils/ViewHelpers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto-Black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto-BlackItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto-BoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto-Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto-LightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto-MediumItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto-Thin.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto-ThinItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/i18n/common.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/i18n/common_vi_VN.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/i18n/component.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/i18n/component_vi_VN.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/i18n/customers.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/i18n/customers_vi_VN.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons12/clear.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons12/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons16/addnew.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons16/app.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons16/cancel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons16/category.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons16/close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons16/country.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons16/customer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons16/dashboard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons16/delete.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons16/edit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons16/email.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons16/exit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons16/first.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons16/folder.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons16/help.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons16/homepage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons16/laf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons16/last.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons16/location.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons16/mobile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons16/next.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons16/ok.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons16/phone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons16/preview.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons16/previous.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons16/print.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons16/printpreview.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons16/refresh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons16/save.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons22/about.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons22/app.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons22/category.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons22/country.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons22/customer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons22/dashboard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons22/exit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons22/folder.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons22/help.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons22/laf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons22/settings.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons22/statusbar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/category.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/country.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/customer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/splash.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/splitExcel_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/thue_icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/XMHD.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/template.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/SliptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/impl/SliptServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/serviceImpl/ExcelServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/impl/ExcelServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/serviceImpl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/impl/FileServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/SplitExcelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/entity/CompanyTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/entity/CompanyTarget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/entity/InvoiceInputEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/entity/InvoiceInputEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/ExcelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/ExcelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/SliptExcelService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/impl/ExcelServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/impl/ExcelServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/impl/SliptServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/impl/SplitServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/view/SupportSplitPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/view/SupportSplitPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nvt/slpit/com/entity/CompanyTarget.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nvt/slpit/com/entity/CompanyTarget.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nvt/slpit/com/entity/InvoiceInputEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nvt/slpit/com/entity/InvoiceInputEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nvt/slpit/com/service/ExcelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nvt/slpit/com/service/ExcelService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nvt/slpit/com/service/SliptExcelService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nvt/slpit/com/service/impl/ExcelServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nvt/slpit/com/service/impl/ExcelServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nvt/slpit/com/service/impl/SliptServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nvt/slpit/com/ui/view/SupportSplitPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nvt/slpit/com/ui/view/SupportSplitPanel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nvt/slpit/com/ui/view/SupportSplitPanel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nvt/slpit/com/ui/view/SupportSplitPanel$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nvt/slpit/com/ui/view/SupportSplitPanel$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nvt/slpit/com/ui/view/SupportSplitPanel$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nvt/slpit/com/ui/view/SupportSplitPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nvt/slpit/com/ui/view/SupportSplitPanel.class" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,104 +31,6 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/impl/ExcelServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/impl/FileServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/entity/TemplateEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/utils/I18n.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/customers_vi_VN.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="53" />
-            </state>
-          </provider>
-          <provider editor-type-id="ResourceBundle" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/impl/SliptServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="768">
-              <caret line="161" column="45" selection-start-line="161" selection-start-column="45" selection-end-line="161" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#convertCompany#0;class#SliptService#0" />
-                <element signature="method#covertStringToURL#0;class#SliptService#0" />
-                <element signature="method#getStackTrace#0;class#SliptService#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/view/SupportSplitPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="247" column="54" selection-start-line="247" selection-start-column="54" selection-end-line="247" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/ExcelService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/SliptExcelService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -229,63 +57,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/entity/Company.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/FileService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/serviceImpl/CopyRowService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/entity/Invoice.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/serviceImpl/FileServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/entity/CompanyTarget.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/entity/InvoiceInputEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/ExcelService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/domain/MenuDomain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/MenuApp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/BottomPanel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/listerner/ChangeContentPanelListerner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/SupportSplitPanel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/MainPanel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/LeftPanel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/AboutPanel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/components/MessageBox.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/utils/ViewHelpers.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/utils/ResourceBundleControl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/utils/I18n.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/i18n/customers_vi_VN.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/view/AboutPanel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/components/RippleEffect.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/components/ElevationEffect.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/components/MaterialButton.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/components/material/toast/Toast.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/components/material/MaterialProgressSpinner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/components/material/RippleEffect.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/components/material/MaterialShadow.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/components/material/ElevationEffect.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/components/material/MaterialTextField.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/components/material/toast/ToastBar.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/view/BottomPanel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/view/MainPanel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/Application.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/i18n/customers.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/view/TopPanel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/view/LeftPanel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/serviceImpl/ExcelServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/entity/TemplateEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/SliptService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/impl/FileServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/SliptServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/utils/SplitExcelWorker.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/impl/SliptServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/view/SupportSplitPanel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/SliptExcelService.java" />
-      </list>
-    </option>
-  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -293,112 +64,9 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="SlitpExcel" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="SlitpExcel" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1440" />
-    <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="992" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="SlitpExcel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="splitExcel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SlitpExcel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="splitExcel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SlitpExcel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="splitExcel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SlitpExcel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="splitExcel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SlitpExcel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="splitExcel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SlitpExcel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="splitExcel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SlitpExcel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="splitExcel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SlitpExcel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="splitExcel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SlitpExcel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="splitExcel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
-  </component>
+  <component name="ProjectId" id="1VLjsdpuR10zTyuC303eMt1Uw35" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="editor.config.ad.shown" value="true" />
@@ -407,7 +75,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="settings.saveactions" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -436,7 +104,7 @@
   <component name="RunManager" selected="Application.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="nvt.slpit.com.Application" />
-      <module name="splitExcel" />
+      <module name="SlitpExcel" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="nvt.slpit.com.*" />
@@ -505,425 +173,48 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="1440" y="23" width="1920" height="1057" extended-state="6" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1629393" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32916668" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24352331" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39722222" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3287483" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3253886" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24964234" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" weight="0.3297568" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-    </layout>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/impl/ExcelServiceImpl.java</url>
-          <line>264</line>
-          <properties />
+          <line>288</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/impl/ExcelServiceImpl.java</url>
           <line>44</line>
-          <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/utils/I18n.java</url>
-          <line>27</line>
-          <properties />
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/impl/ExcelServiceImpl.java</url>
-          <line>114</line>
-          <properties />
+          <line>119</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="sheet.getRow(4)" />
+        <watch expression="sheet.getRow(4).getCell(5)" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/resources/i18n/customers_vi_VN.properties" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/resources/i18n/component_en_US.properties" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/common.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="ResourceBundle" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/utils/ViewHelpers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1453">
-          <caret line="36" column="50" lean-forward="true" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/component_vi_VN.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle" />
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/util/ResourceBundle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14278">
-          <caret line="2030" column="25" selection-start-line="2030" selection-start-column="25" selection-end-line="2030" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/utils/ResourceBundleControl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2048">
-          <caret line="155" selection-start-line="155" selection-end-line="155" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2117#2118#0" expanded="true" />
-            <element signature="e#2165#2166#0" expanded="true" />
-            <element signature="e#2849#2912#1" expanded="true" />
-            <element signature="e#6406#6407#0" expanded="true" />
-            <element signature="e#6445#6446#0" expanded="true" />
-            <element signature="e#6714#6715#0" expanded="true" />
-            <element signature="e#6762#6763#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1298" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/components/RippleEffect.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="82" column="20" selection-start-line="82" selection-start-column="20" selection-end-line="82" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/components/MaterialButton.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/components/ElevationEffect.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/components/material/toast/Toast.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/components/material/RippleEffect.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/components/material/MaterialShadow.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/components/material/MaterialTextField.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/components/material/MaterialProgressSpinner.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/components/material/MaterialButton.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/components/material/MaterialPasswordField.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/components/material/MaterialPanel.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/components/material/MaterialIconButton.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/components/material/MaterialComboBox.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/components/material/MaterialColor.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/components/material/ElevationEffect.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/components/material/Roboto.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/components/material/toast/ToastBar.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/components/MessageBox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2893">
-          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/view/MenuApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/view/MainPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1234#1235#0" expanded="true" />
-            <element signature="e#1286#1287#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="27" column="36" lean-forward="true" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/images/splash.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/images/customer.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/images/category.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/images/splitExcel_icon.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/javax/swing/ImageIcon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="628">
-          <caret line="214" column="7" lean-forward="true" selection-start-line="214" selection-start-column="7" selection-end-line="214" selection-end-column="7" />
-          <folding>
-            <element signature="e#6701#6702#0" expanded="true" />
-            <element signature="e#6758#6759#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/awt/Font.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-234">
-          <caret line="566" column="11" selection-start-line="566" selection-start-column="11" selection-end-line="566" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/view/LeftPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="32" column="65" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/view/TopPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/utils/I18n.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/customers_vi_VN.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="53" />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/customers.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/view/AboutPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/view/BottomPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="19" column="58" selection-start-line="18" selection-start-column="8" selection-end-line="19" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/impl/ExcelServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/impl/FileServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/entity/TemplateEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/utils/SplitExcelWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/ExcelService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/impl/SliptServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="161" column="45" selection-start-line="161" selection-start-column="45" selection-end-line="161" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#convertCompany#0;class#SliptService#0" />
-            <element signature="method#covertStringToURL#0;class#SliptService#0" />
-            <element signature="method#getStackTrace#0;class#SliptService#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/ui/view/SupportSplitPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="247" column="54" selection-start-line="247" selection-start-column="54" selection-end-line="247" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nvt/slpit/com/service/SliptExcelService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>splitExcel</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

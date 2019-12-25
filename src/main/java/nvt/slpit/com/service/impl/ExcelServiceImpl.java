@@ -35,7 +35,7 @@ public class ExcelServiceImpl implements ExcelService {
     }
 
     @Override
-    public Map<String, List<InvoiceInputEntity>> readExcelFile(File fullPath, int startRow) throws Exception {
+    public Map<String, List<InvoiceInputEntity>> readExcelFile(File fullPath, int startRow, int startIndex) throws Exception {
         Workbook workbook = WorkbookFactory.create(fullPath);
         Sheet sheet = workbook.getSheetAt(0);
 
@@ -46,6 +46,7 @@ public class ExcelServiceImpl implements ExcelService {
         String masothue = sheet.getRow(5).getCell(5).getStringCellValue();
 
         int index = 0;
+        int code = startIndex;
         boolean isLastRow = false;
         while (!isLastRow) {
             //ma so cong ty
@@ -66,16 +67,20 @@ public class ExcelServiceImpl implements ExcelService {
                 continue;
 
             }
+
             if (listMap.containsKey(mstCty)) {
                 listInvoices = listMap.get(mstCty);
+                code = listInvoices.get(0).getCode();
             } else {
                 listInvoices = new ArrayList<>();
                 listMap.put(mstCty, listInvoices);
+                code = code + 1;
             }
 
             invoiceInputEntity = new InvoiceInputEntity();
             invoiceInputEntity.setIndex(++index);
             invoiceInputEntity.setTaxCode(mstCty);
+            invoiceInputEntity.setCode(code);
             invoiceInputEntity.setSaleCompanyName(nguoiNopThue);
             invoiceInputEntity.setSaleCompanyCode(masothue);
             //column ky hieu
@@ -137,6 +142,9 @@ public class ExcelServiceImpl implements ExcelService {
         font.setFontName("Times New Roman");
         style.setFont(font);
 
+        cell = worksheet.getRow(2).getCell(2);
+        cell.setCellValue(String.format("%d/XMHĐ-KTr1", data.getCode()));
+
         cell = worksheet.getRow(5).getCell(4);
         cell.setCellValue(data.getManagerDepartment());
 
@@ -172,7 +180,7 @@ public class ExcelServiceImpl implements ExcelService {
 
         cell = worksheet.getRow(rowNumber).getCell(6);
         cell.setCellValue(data.getTotalValue());
-
+        moveImage(worksheet, invoices.size() - 1, startRow);
 
         fsIP.close();
 //Open FileOutputStream to write updates
@@ -257,6 +265,22 @@ public class ExcelServiceImpl implements ExcelService {
             }
         }
         return strCellValue;
+    }
+
+    private void moveImage(XSSFSheet sheet, int insertedRowCount, int startRow) {
+        XSSFDrawing drawings = sheet.createDrawingPatriarch();
+        for (XSSFShape shape : drawings.getShapes()) {
+            if (shape instanceof Picture) {
+                XSSFPicture picture = (XSSFPicture) shape;
+                XSSFClientAnchor anchor = picture.getClientAnchor();
+                int row1 = anchor.getRow1();
+                if (row1 > startRow && row1 <= sheet.getLastRowNum()) {
+                    int row2 = anchor.getRow2();
+                    anchor.setRow1(row1 + insertedRowCount);
+                    anchor.setRow2(row2 + insertedRowCount);
+                }
+            }
+        }
     }
 
 
