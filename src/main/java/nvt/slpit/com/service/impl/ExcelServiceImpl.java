@@ -143,7 +143,7 @@ public class ExcelServiceImpl implements ExcelService {
         style.setFont(font);
 
         cell = worksheet.getRow(2).getCell(2);
-        cell.setCellValue(String.format("%d/XMHĐ-KTr1", data.getCode()));
+        cell.setCellValue(String.format("%d/XMHĐ-KT1", data.getCode()));
 
         cell = worksheet.getRow(5).getCell(4);
         cell.setCellValue(data.getManagerDepartment());
@@ -154,6 +154,12 @@ public class ExcelServiceImpl implements ExcelService {
 
         cell = worksheet.getRow(7).getCell(9);
         cell.setCellValue(data.getTaxCode());
+
+        cell = worksheet.getRow(8).getCell(3);
+        cell.setCellValue(company.getName());
+
+        cell = worksheet.getRow(8).getCell(9);
+        cell.setCellValue(company.getTaxCode());
 
 
         List<Invoice> invoices = data.getInvoiceList();

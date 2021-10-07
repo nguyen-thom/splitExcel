@@ -69,13 +69,15 @@ public class SplitServiceImpl extends SwingWorker<Integer, String> implements Sp
                 String ctyCode = listEntry.getKey();
 
                 //create file name
+                int code = companyTargetInput.getCode();
                 String name = companyTargetInput.getName();
-                String fileName = ctyCode.concat("_");
-                //fileName = fileName.replace("//", "-");
-                fileName = covertStringToURL(fileName);
+                String fileName = String.format("%d_%s_%s", code, ctyCode, name);
+                String alphaAndDigits = fileName.replaceAll("[^a-zA-Z0-9_ ]+", "");
+                //fileName = covertStringToURL(fileName);
 
                 //create file from template
-                File fileOutput = FileUtils.getFile(outputDir, fileName + ".xlsx");
+
+                File fileOutput = FileUtils.getFile(outputDir, alphaAndDigits + ".xlsx");
                 fileService.copy(fileTemplateOutput, fileOutput);
                 publish(fileOutput.getPath());
                 //resultStringPath.add(fileOutput.getPath());
